@@ -1,0 +1,10 @@
+<div>
+    <h2>Hello App</h2>
+    <div *ngFor="let item of courseList" (click)="itemClicked(item)" (mouseover)="itemHovered(item)">
+        {{item}}
+    </div>
+
+    <input type="text" value="test" (keyup) ="funct(value)" />
+    <app-observables></app-observables>
+    
+</div>

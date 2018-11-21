@@ -1,0 +1,10 @@
+<div>
+    <button name="temp" (click)="remove()" >Remove python</button>
+    <h2> Course List: </h2>
+    <div *ngIf="show">
+            <app-courses [courseList]="coursesList" (onListClick)="getItem($event)"  (onHover)="getItemHover($event)"></app-courses>
+    </div>
+    <h4>Clicked item</h4>
+    {{clickedItem}}
+    {{hoverItem}}
+</div>
